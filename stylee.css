@@ -1,0 +1,168 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif;
+}
+.content{
+    background-color: #ecd691;
+    min-height: 60px;
+    padding-top: 30px;
+    
+}
+
+.brand{
+    
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Dancing Script';
+}
+nav{
+    float: right;
+}
+nav a{
+    margin-right: 10px;
+    color:black;
+    text-decoration: none;
+}
+
+.profile{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 40%;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 2;
+}
+.profile img{
+    max-width: 300px;
+}
+.heading{
+   
+    text-align: center;
+    
+}
+.gallery img{
+    max-width:300px;
+}
+.gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.art{
+    border: solid 1px black;
+    padding:10px;
+}
+.gal{
+    margin-top: 160px;
+}
+h1{
+  
+    text-align: center;
+}
+.acrylic{
+    display: grid;
+    grid-template-columns: 700px 200px;
+    justify-items: center;
+   
+}
+.acrylic img{
+    max-width: 300px;
+    max-height: 300px;
+}
+.pencil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pencil img{
+    max-width: 400px;
+    margin: 20px;
+}
+.mural{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mural img{
+    max-width:300px;
+    margin:20px;
+}
+.cont{
+    width: 40%;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+.origin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.origin img{
+    max-width: 300px;
+  
+}
+.tanjore{
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;
+}
+.tanjore img{
+    max-width: 300px;
+}
+@media (max-width:768px)
+{
+    .cont{
+        width: 100%;
+    }
+    .profile,.gal{
+        margin:0;
+    }
+    .art{
+        margin-bottom:10px;
+    }
+    .brand,nav{
+        float:none;
+        width:100%;
+    }
+    nav a{
+        display: block;
+        border-bottom: #fa9898 solid 0.5px;
+
+    }
+    .profile{
+        display: block;
+    }
+    .profile img,.text{
+        width:100%;
+        margin:0;
+    
+    }
+    .gallery,.acrylic{
+        grid-template-columns: 1fr;
+        width:100%;
+    }
+    .acrylic,.pencil img{
+        
+        max-width: 200px;
+    }
+    .gallery:nth-of-type(1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .gallery:nth-of-type(2)
+    {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .gallery:nth-of-type(3)
+    {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
